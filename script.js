@@ -5,11 +5,11 @@ toggleMenu.addEventListener("click",()=>{
 })
 let proj1=document.getElementById("card1");
 proj1.addEventListener("click",()=>{
-    window.open("https://weather-app-epir.vercel.app/")
+    window.open("https://weather-app-puce-zeta-20.vercel.app/")
 });
 let proj2=document.getElementById("card2");
 proj2.addEventListener("click",()=>{
-    window.open("https://rock-paper-scissors-game-psi-three.vercel.app/")
+    window.open("https://rock-paper-scissors-game-seven-sigma.vercel.app/")
 });
 let proj3=document.getElementById("card3");
 proj3.addEventListener("click",()=>{

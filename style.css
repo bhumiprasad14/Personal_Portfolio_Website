@@ -234,8 +234,9 @@ padding-bottom: 15px;
     text-decoration: none;
     color:white;
 }
-@media(max-width:900px)
+@media(max-width:768px)
 {   
+
    .navbar h2{
     font-size: 1rem;
    }
@@ -259,6 +260,7 @@ padding-bottom: 15px;
         display: block;
        
     }
+    
     .homepage p{
         margin-left:10px;
         font-size: 25px;
