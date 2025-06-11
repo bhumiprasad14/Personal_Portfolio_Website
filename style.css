@@ -236,7 +236,7 @@ padding-bottom: 15px;
 }
 @media(max-width:768px)
 {   
-
+   
    .navbar h2{
     font-size: 1rem;
    }
@@ -266,29 +266,38 @@ padding-bottom: 15px;
         font-size: 25px;
     }
     .homepage img{
-        height:20rem;
+        height:10rem;
     }
     .aboutpage{
         flex-direction: row;
         
     }
     .aboutpage img{
-        height:300px;
-        width: 300px;
+        height:10rem;
+        width: 10rem;
         border: 2px solid pink;
         border-radius: 50%;
         margin-left: 10px;
     }
     .aboutpage p{
-        font-size: 16px;
+        font-size: 12px;
+    }
+    .cv-a{
+        font-size: 12px;
+        padding: 5px 10px;
     }
     .projectdiv{
-        width:500px;
-        flex-direction: column;
+        height:700px;
+    
+        display:flex;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
-        gap:15px;
-        padding: 17px;
+        justify-content: space-evenly;
+        
+    }
+    .cards{
+        height:100px;
+        width:200px;
     }
 }
 
