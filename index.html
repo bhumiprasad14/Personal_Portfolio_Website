@@ -1,104 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyPortfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=MedievalSharp&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=MedievalSharp&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="navbar">
-        <h2 class="heading">BHUMI PRASAD</h2>
-        <ul class="nav_links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contacts</a></li>
-        </ul>
-       <button id="toggle-btn"><i class="fa-solid fa-bars"  ></i></button>
-    </div>
-<!-- Home Page -->
-    <section id="home">
-        <div class="homepage">
-        <div class="first">
-        <p class="text">Welcome To my Portfolio!</p>
-        <br><br>
-    <p class="text">Hi, My name is <span id="highlight">Bhumi Prasad</span> <br>
-        and I am a <br>passionate <span id="highlight">Web Developer</span> 
-    </p>
-    </div>
-        <div class="second">
+  <!-- ====== Navbar ====== -->
+  <div class="navbar">
+    <h2 class="heading">BHUMI PRASAD</h2>
+    <ul class="nav_links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contacts</a></li>
+    </ul>
+    <button id="toggle-btn"><i class="fa-solid fa-bars"></i></button>
+  </div>
+
+  <!-- ====== Home Section ====== -->
+  <section id="home">
+    <div class="homepage">
+      <div class="first">
+        <p class="text">Welcome To my Portfolio!</p><br><br>
+        <p class="text">
+          Hi, My name is <span id="highlight">Bhumi Prasad</span><br>
+          and I am a<br>
+          passionate <span id="highlight">Web Developer</span>
+        </p>
+      </div>
+      <div class="second">
         <img src="heroimg.png" alt="myimg">
-        </div>
-        </div>
-    </section>
-    <br>
-    <hr class="hr">
-     <br>
-<!-- About -->
-
-    <section id="about">
-        <div class="aboutpage">
-            <div class="first">
-                
-                <img src="MyImg.png">
-            </div>
-            <div class="second">
-    <h1>ABOUT ME</h1>
-    <br><br>
- <p> Hello! I'm a Computer Science Engineering student at MCKV Institute of Engineering, with a passion for creating beautiful and responsive web applications. I enjoy turning ideas into real, user-friendly digital experiences using HTML, CSS, and JavaScript.
-    <br>
-    When I'm not coding, you'll find me expressing creativity through painting and sketching—my favorite way to relax and stay inspired. I'm always eager to learn new technologies and bring both artistic and technical skills together in my work.
-
-    Let's build something amazing!  </p>
-<br><br><div class="cv-btn"><a href="BHUMI_CVF.pdf"  class="cv-a" download>Download CV</a></div>
-    </div>
-    </div>
-    </section>
-    <br>
-    <hr class="hr">
-  <br>
-  <!-- Projects -->
-    <section id="projects">
-        <h2>My Projects</h2>
-      
-        
-        <div class="projectdiv">    
-            <div class="cards" id="card1" style="background-image: url(proj1.jpeg)"><div class="hover-text" >Project1<br>Weather Application</div></div>
-            <div class="cards" id="card2" style="background-image: url(proj2.jpeg)"><p class="hover-text" >Project2<br>RockPaperScissors Game</p></div>
-            <div class="cards" id="card3" style="background-image: url(proj3.jpeg)"><p class="hover-text" >Project3<br>TicTacToe Game</p></div>
-        </div>
-        
-    </section>
-    <br>
-        <hr class="hr">
-        <br>
-    <!-- Contact -->
-    <section id="contact">
-        <div class="contactpage">
-        <h2>Contact Me</h2>
-
-      <form id="contactForm">
-      <input type="text" id="name" placeholder="Your Name" required />
-      <input type="email" id="email" placeholder="Your Email" required />
-      <textarea id="message" placeholder="Enter your message..." required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-
-        </div>
-    </section>
-    <footer class="footer">
-    <div class="footer-content">
-      <p>&copy; 2025 Bhumi Prasad </p>
-      <div class="socials">
-        <i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/bhumi-prasad-4782702a1/"> LinkedIn |</a>
-        <i class="fa-brands fa-github"></i><a href="https://github.com/bhumiprasad14" target="_blank"> Github </a>  
-        <br><i class="fa-solid fa-envelope"></i><span> Email:prasad14bhumi@gmail.com</span>
       </div>
     </div>
-  </footer>
-    <script src="script.js"></script>
+  </section>
+
+  <br><hr class="hr"><br>
+
+  <!-- ====== About Section ====== -->
+  <section id="about">
+    <div class="aboutpage">
+      <div class="first">
+        <img src="MyImg.png" alt="About Me">
+      </div>
+      <div class="second">
+        <h1>ABOUT ME</h1><br><br>
+        <p>
+          Hello! I'm a Computer Science Engineering student at MCKV Institute of Engineering, with a passion for creating beautiful and responsive web applications. I enjoy turning ideas into real, user-friendly digital experiences using HTML, CSS, and JavaScript.
+          <br><br>
+          When I'm not coding, you'll find me expressing creativity through painting and sketching—my favorite way to relax and stay inspired. I'm always eager to learn new technologies and bring both artistic and technical skills together in my work.
+          <br><br>
+          Let's build something amazing!
+        </p>
+        <br><br>
+        <div class="cv-btn">
+          <a href="BHUMI_CVF.pdf" class="cv-a" download>Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br><hr class="hr"><br>
+
+  <!-- ====== Projects Section ====== -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projectdiv">
+      <div class="cards" id="card1" style="background-image: url(proj1.jpeg)">
+        <div class="hover-text">Project 1<br>Weather Application</div>
+      </div>
+      <div class="cards" id="card2" style="background-image: url(proj2.jpeg)">
+        <p class="hover-text">Project 2<br>RockPaperScissors Game</p>
+      </div>
+      <div class="cards" id="card3" style="background-image: url(proj3.jpeg)">
+        <p class="hover-text">Project 3<br>TicTacToe Game</p>
+      </div>
+    </div>
+  </section>
+
+  <br><hr class="hr"><br>
+
+  <!-- ====== Contact Section ====== -->
+  <section id="contact">
+    <div class="contactpage">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Enter your message..." required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ====== Footer ====== -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Bhumi Prasad</p>
+      <div class="socials">
+        <i class="fa-brands fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/bhumi-prasad-4782702a1/"> LinkedIn |</a>
+        <i class="fa-brands fa-github"></i>
+        <a href="https://github.com/bhumiprasad14" target="_blank"> Github </a>
+        <br>
+        <i class="fa-solid fa-envelope"></i>
+        <span> Email: prasad14bhumi@gmail.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- External Script -->
+  <script src="script.js"></script>
 </body>
+
 </html>
