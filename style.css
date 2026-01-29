@@ -421,6 +421,89 @@ body {
   }
 }
 
+/* Additional responsive improvements */
+/* Make images and background covers scale */
+img, .project-image, .homepage img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hero text responsive sizing */
+.first p {
+  font-size: clamp(1.6rem, 4.5vw, 3rem);
+}
+
+.homepage {
+  flex-wrap: wrap;
+}
+
+/* Stack homepage content on medium and small screens */
+@media (max-width: 1024px) {
+  .homepage {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 80px;
+  }
+  .homepage .second,
+  .homepage .first {
+    width: 100%;
+    max-width: 900px;
+    padding: 0 20px;
+    text-align: center;
+  }
+  .navbar h2 { padding-left: 20px; }
+}
+
+/* Hide complex tech-stack animation on very small screens to improve performance */
+@media (max-width: 640px) {
+  .tech-stack {
+    display: none;
+  }
+  .aboutpage {
+    padding: 60px 4% 40px;
+  }
+  .aboutpage .second {
+    max-width: 100%;
+  }
+}
+
+/* Make footer and contact sections adapt */
+@media (max-width: 600px) {
+  .footer {
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .socials {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+
+/* Tweak project card image aspect ratio for consistency */
+.project-image {
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+/* Ensure projects grid has comfortable spacing on narrow screens */
+@media (max-width: 420px) {
+  .projects-grid {
+    gap: 18px;
+    padding: 0 12px;
+  }
+  .project-overlay h3 { font-size: 1.2rem; }
+  .project-info h3 { font-size: 1.1rem; }
+}
+
+/* Improve navbar spacing on very small screens */
+@media (max-width: 360px) {
+  .nav_links li { margin: 0 10px; font-size: 0.95rem; }
+  .navbar h2 { font-size: 0.95rem; }
+}
+
 @media (max-width: 480px) {
   .tech-stack {
     width: 320px;
