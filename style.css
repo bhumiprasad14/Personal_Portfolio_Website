@@ -467,6 +467,38 @@ img, .project-image, .homepage img {
   }
 }
 
+/* Ensure the about section uses full width and the first column (tech-stack) is removed on small screens */
+@media (max-width: 640px) {
+  .aboutpage {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    padding: 40px 4% 30px;
+    min-height: auto;
+  }
+
+  .aboutpage .first {
+    display: none; /* hide the container that held the animated tech-stack */
+  }
+
+  .aboutpage .second {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    text-align: left;
+  }
+
+  .about-title {
+    text-align: left;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
 /* Make footer and contact sections adapt */
 @media (max-width: 600px) {
   .footer {
@@ -502,6 +534,57 @@ img, .project-image, .homepage img {
 @media (max-width: 360px) {
   .nav_links li { margin: 0 10px; font-size: 0.95rem; }
   .navbar h2 { font-size: 0.95rem; }
+}
+
+/* Hero image sizing improvements */
+.homepage .second img {
+  width: clamp(220px, 36vw, 480px);
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Footer layout improvements */
+.footer {
+  display: flex;
+  padding: 20px 16px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .footer-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer .footer-content p { margin: 0; }
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.socials a { color: white; margin-left: 6px; text-decoration: none; }
+
+@media (max-width: 600px) {
+  .footer .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    text-align: left;
+  }
+  .socials { justify-content: flex-start; }
 }
 
 @media (max-width: 480px) {
